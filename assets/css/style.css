@@ -2,16 +2,18 @@
 
 html, body{
 	height: 100%;
-	font-family: arial;
+	font-family: 'Roboto', sans-serif;
 }
 
 header{
 	float: left;
-	width: 1320px;
+	width: 100%;
 	height: 70px;
 	background-color: #950814;
-	color: #009952; 
-	border-radius: 5px;
+	color: #009952;
+}
+.banner_img{
+	width: 100%;
 }
 ul.nav-links{
 	float: right;
@@ -28,8 +30,9 @@ li.nav-buttons{
 	font-size: 18px;
 	text-align: center;
 	padding-top: 10px;
-	color: #191616;
+	color: #fff;
 	border-radius: 5px;
+	letter-spacing: 1px;
 }
 
 li.nav-buttons-open{
@@ -42,15 +45,13 @@ li.nav-buttons-open{
 	font-size: 18px;
 	text-align: center;
 	padding-top: 10px;
-	color: #636363;
-	border: 1px solid #636363;
-	border-radius: 5px;
+	color: #000;
+	letter-spacing: 1px;
 }
 
 a:hover li.nav-buttons{
-	color: white;
-	background-color: #666666;
-	text-decoration: underline;
+	color: #000;
+	text-decoration: none;
 }
 /*
 a:visited li.nav-buttons{
@@ -70,56 +71,47 @@ h1{
 	min-height: 100%;
 	padding-bottom: 60px;
 	box-sizing: border-box;
-	background: #fff;
+	background: #f0f0f0;
 }
-
-#cattle-display-box{
-	float: left;
-	height: 350px;
-	width: 860px;
-	margin-top: 40px;
-	margin-left 20px;
-	margin-bottom: 40px;
-	
-}
-#display-box-left{
+.display-box-left{
+	opacity: 0.75;
 	float: left;
 	height: 250px;
-	width: 220px;
+	width: 200px;
 	margin-top: 40px;
-	border: 1px solid #191619;
 	border-radius: 5px;
-	box-shadow: 2px 4px #cccccc;
+	box-shadow: 2px 1px #8e8e8e;
 	margin-left: 40px;
+	background-color: white;
+}
+.display-box-left:hover{
+	opacity: 1;
+}
+
+.display-box-right{
+	opacity: 0.75;
+	float: left;
+	height: 250px;
+	width: 200px;
+	margin-top: 40px;
+	border-radius: 5px;
+	box-shadow: 2px 1px #8e8e8e;
+	margin-left: 40px;
+	background-color: white;
+}
+.display-box-right:hover{
+	opacity: 1;
 }
 .display-box-center{
 	float: left;
 	height: 250px;
-	width: 220px;
+	width: 200px;
 	margin-top: 40px;
 	border: 1px solid #191619;
 	border-radius: 5px;
 	box-shadow: 2px 4px #cccccc;
 	margin-left: 40px;
 }
-#display-box-right{
-	float: left;
-	height: 250px;
-	width: 220px;
-	margin-top: 40px;
-	border: 1px solid #191619;
-	border-radius: 5px;
-	box-shadow: 2px 4px #cccccc;
-	margin-left: 40px;
-}
-#farmer-display-box{
-	float: left;
-	height: 350px;
-	width: 300px;
-	margin-top: 40px;
-	margin-left: 40px;
-}
-
 h3{
 	margin-left: 10px;
 	margin-top: 10px;
@@ -201,4 +193,8 @@ input[type=submit]{
 }
 input[type=submit]:hover{
 	text-decoration: underline;
+}
+
+#form-error-list{
+display: none;
 }
