@@ -9,8 +9,7 @@ header{
 	float: left;
 	width: 100%;
 	height: 70px;
-	background-color: #950814;
-	color: #009952;
+	background-color: #cccccc;
 }
 .banner_img{
 	width: 100%;
@@ -30,7 +29,7 @@ li.nav-buttons{
 	font-size: 18px;
 	text-align: center;
 	padding-top: 10px;
-	color: #fff;
+	color: #005d2f;
 	border-radius: 5px;
 	letter-spacing: 1px;
 }
@@ -45,7 +44,7 @@ li.nav-buttons-open{
 	font-size: 18px;
 	text-align: center;
 	padding-top: 10px;
-	color: #000;
+	color: #950814;
 	letter-spacing: 1px;
 }
 
