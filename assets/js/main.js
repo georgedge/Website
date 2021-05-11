@@ -53,7 +53,7 @@ $(document).ready(function(){
 		if (is_error == true) {
 			$("#form-error-count").text(error_count);
 			$("#form-error-list").css("display", "block");
-			alert("Please correct field in red")
+			alert("Please correct field in red");
 			event.preventDefault();
 		}else{
 			alert("Your details have been sent, thank you.")
