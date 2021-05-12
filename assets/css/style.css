@@ -13,7 +13,7 @@ header{
 }
 #header-image{
 	width: 100%;
-	margin-bottom: -10px;
+	opacity: 0.8;
 }
 #header-logo{
 	float: right;
