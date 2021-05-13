@@ -1,30 +1,6 @@
-// var form = document.getElementById("contact-form");
-
-// form.addEventListener("submit", function() {
-// 	var fullname = document.getElementById("fullname").value;
-
-// 	if (fullname != "") {
-// 		return true;
-// 	} else {
-// 		alert("You can't submit the form without a fullname!");
-// 		event.preventDefault();
-// 		return false;
-// 	}
-// });
-
-// $(document).ready(function(){
-// 	if (jQuery) {
-// 		alert("JQuery is loaded");
-// 	} else {
-// 		alert("JQuery is NOT loaded");
-// 	}
-// });
-
-//$("h1#heading").css("color", "green");
-
 $(document).ready(function(){
 	
-	$("#contact-form").submit(function(event){ //these are id's from the cpontact form
+	$("#contact-form").submit(function(event){
 		
 		var is_error = false;
 		var error_count = 0;

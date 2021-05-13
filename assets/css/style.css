@@ -9,7 +9,8 @@ header{
 	float: left;
 	width: 100%;
 	height: 75px;
-	background-color: #e1e7ba;
+	background-color: #c4cf7c;
+	margin-bottom: 30px;
 }
 #header-image{
 	width: 100%;
@@ -77,42 +78,62 @@ h1{
 	color: #99ba38;
 }
 .display-box{
-	margin-top: 60px;
-	width: 100%;
+	float: left;
+	margin: 30px 0px 30px 20px;
+	width: 95%;
 	height: 350px;
+	border-radius: 8px;
+	padding-left: 20px;
+	background-color: #e1e7ba;
 }
 .display-box-left{
 	float: left;
 	display:inline-block;
 	width: 45%;
 	height: 350px;
-	margin: 20px;
+	margin-top: 20px;
 }
 .display-box-right{
 	float: left;
-	display:inline-block;
+	display: inline-block;
 	width: 45%;
 	height: 350px;
 	margin: 20px;
 }
+.enquire-button {
+  color: #000;
+  border: none;
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  font-size: 16px;
+  margin: 20px 2px;
+  border-radius: 10px;
+  background-color: #749fcb; 
+  cursor: pointer;
+}
 .people-display-box{
-	margin-top: 60px;
-	width: 100%;
+	float: left;
+	margin: 30px 60px 30px 20px;
+	width: 75%;
 	height: 250px;
+	border-radius: 8px;
+	padding-left: 20px;
+	background-color: #e1e7ba;
 }
 .people-display-box-left{
 	float: left;
 	display:inline-block;
 	width: 45%;
 	height: 250px;
-	margin: 20px;
+	margin: 20px 0px 0px 20px;
 }
 .people-display-box-right{
-	float: left;
+	float: right;
 	display:inline-block;
-	width: 45%;
+	width: 30%;
 	height: 250px;
-	margin: 20px;
+	margin-top: 20px;
 }
 .text-paragraph{
 	float: left;
@@ -220,9 +241,6 @@ input[type=submit]{
 	border-radius: 4px;
 	margin: 8px 3px;
 	cursor: pointer;
-}
-input[type=submit]:hover{
-	text-decoration: underline;
 }
 
 #form-error-list{
