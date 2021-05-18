@@ -19,6 +19,12 @@ $(document).ready(function(){
 			is_error = true;
 			error_count +=1;
 		}
+		var phone = $("#form-phone").val();
+		if (email == ""){
+			$("input#form-phone").css("border-color", "#ff3333");
+			is_error = true;
+			error_count +=1;
+		}
 		var desc = $("#form-desc").val();
 		if (desc == ""){
 			$("textarea#form-desc").css("border-color", "#ff3333");
@@ -29,10 +35,9 @@ $(document).ready(function(){
 		if (is_error == true) {
 			$("#form-error-count").text(error_count);
 			$("#form-error-list").css("display", "block");
-			alert("Please correct field in red");
 			event.preventDefault();
 		}else{
-			alert("Your details have been sent, thank you.")
+			alert("Your details have been sent, thank you.");
 		}
 
 		$("#form-name").focusout(function(){
@@ -46,5 +51,9 @@ $(document).ready(function(){
 		$("#description").focusout(function(){
 			$("textarea#form-desc").css("border-color", "green");
 		});
+	});
+
+	$("#narrow-menu-bar").click(function(){
+		$("ul.nav-links").toggle();
 	});
 });

@@ -54,18 +54,21 @@ li.nav-buttons-open{
 	letter-spacing: 1px;
 	text-decoration: underline;
 }
-
 a:hover li.nav-buttons{
 	color: #000;
 	text-decoration: none;
 }
-/*
-a:visited li.nav-buttons{
-	color: white;
-	background-color: #666666;
-	text-decoration: underline;
-}*/
-
+.narrow-menu-outer{
+	float: left;
+	width: 100%;
+	height: auto;
+}
+.narrow-menu-inner{
+	display: none;
+	height: auto;
+	width: 100%;
+	margin: 0 auto;
+}
 #wrapper{
 	float: left;
 	width: 100%;
@@ -244,4 +247,77 @@ input[type=submit]{
 
 #form-error-list{
 display: none;
+}
+
+.fa-bars{
+	font-size: 30px;
+}
+#narrow-menu-bar{
+	width: 45%;
+	margin-left: 30px;
+	padding-top: 50px;
+}
+
+@media only screen and (max-width: 1150px){
+	#header-logo{
+		display: none;
+	}
+}
+@media only screen and (max-width: 950px){
+	#header-logo{
+		display: none;
+	}
+	li.nav-buttons-open, li.nav-buttons{
+		margin: 0 auto;
+	}
+	.display-box, .display-box-left, .display-box-right{
+		height: auto;
+		display: block;
+		width: auto;
+		margin-left: 0;
+	}
+	h1{
+		text-align: center;
+	}
+}
+@media only screen and (max-width: 800px){
+	#header-logo{
+		display: inline-block;
+		float: right;
+		margin: 0 20px;
+	}
+	.narrow-menu-inner{
+		display: block;
+	}
+	.wide-menu{
+		display: none;
+	}
+	header{
+		height: auto;
+		display: inline-block;
+		padding-top: 20px;
+	}
+	ul.nav-links{
+		margin: 0;
+		width: 100%;
+		height: auto;
+		display: none;
+	}
+	li.nav-buttons-open, li.nav-buttons{
+		float: right;
+		width: 100%;
+		margin-left: 0px;
+	}
+	img{
+		max-width: 100%;
+	}
+	.display-box, .display-box-left, .display-box-right{
+		height: auto;
+		display: block;
+		width: auto;
+		margin-left: 0;
+	}
+	h1{
+		text-align: center;
+	}
 }
