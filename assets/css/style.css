@@ -262,17 +262,14 @@ display: none;
 	#header-logo{
 		display: none;
 	}
-}
-@media only screen and (max-width: 950px){
-	#header-logo{
-		display: none;
-	}
 	li.nav-buttons-open, li.nav-buttons{
 		margin: 0 auto;
 	}
+	img{
+		max-width: 100%;
+	}
 	.display-box, .display-box-left, .display-box-right{
 		height: auto;
-		display: block;
 		width: auto;
 		margin-left: 0;
 	}
@@ -284,7 +281,8 @@ display: none;
 	#header-logo{
 		display: inline-block;
 		float: right;
-		margin: 0 20px;
+		margin-right: 20px;
+		margin-bottom: 10px;
 	}
 	.narrow-menu-inner{
 		display: block;
