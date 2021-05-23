@@ -24,7 +24,7 @@ header{
 ul.nav-links{
 	float: left;
 	margin-right: 120px;
-	margin-top: 20px;
+	margin-top: 15px;
 }
 li.nav-buttons{
 	display: inline;
@@ -70,6 +70,17 @@ a:hover li.nav-buttons{
 	width: 100%;
 	margin: 0 auto;
 }
+.social-icons a {
+  display: inline;
+  float: right;
+  width: 25px;
+  margin-top: 20px;
+  margin-right: 30px;
+  color: #00acee;
+}
+.social-icons a:hover {
+  color: #213f66;
+}
 #wrapper{
 	float: left;
 	width: 100%;
@@ -79,6 +90,15 @@ a:hover li.nav-buttons{
 }
 h1{
 	color: #9CA563;
+}
+h2{
+	margin-left: 20px;
+	margin-top: 20px;
+}
+h3{
+	color: #000;
+	margin-left: 10px;
+	margin-top: 22px;
 }
 img{
 	border-radius: 4px;
@@ -117,6 +137,10 @@ img{
   border-radius: 10px;
   background-color: #749fcb; 
   cursor: pointer;
+}
+.enquire-button:hover{
+	background-color: #87acd2;
+	border: 1px solid #4279b0;
 }
 .people-display-box{
 	float: left;
@@ -177,12 +201,22 @@ img{
 .select-box:hover{
 	opacity: 1;
 }
-
-h3{
-	margin-left: 10px;
-	margin-top: 10px;
+.news-box-outer{
+	float: left;
+	margin: 30px 0px 30px 120px;
+	width: 65%;
+	height: 600px;
+	border-radius: 8px;
+	padding-left: 20px;
+	background-color: #e1e7ba;
 }
-
+.news-box-inner{
+	float: left;
+	display: block;
+	width: 75%;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
 footer{
 	float: left;
 	width: 100%;
@@ -192,24 +226,6 @@ footer{
 	color: #fff;
 	text-align: center;
 }
-.social-icons-footer a {
-  display: inline;
-  margin-right: 0.75rem;
-  margin-left: 0.75rem;
-  color: #00acee;
-}
-.social-icons-footer a:hover {
-  color: #213f66;
-}
-.footer-text {
-  color: #f4f4f4;
-  letter-spacing: 1px;
-  font-weight: 300;
-}
-.footer-bg {
-  background-color: #193252;
-}
-
 #contact-form{
 	margin-left: 30%;
 }
@@ -251,6 +267,10 @@ input[type=submit]{
 	margin: 8px 50px;
 	cursor: pointer;
 }
+input[type=submit]:hover{
+	opacity: 0.75;
+	border: 1px solid #000;
+}
 
 #form-error-list{
 display: none;
@@ -287,9 +307,13 @@ display: none;
 @media only screen and (max-width: 800px){
 	#header-logo{
 		display: inline-block;
+		float: left;
+		padding-bottom: 10px;
+	}
+	.fa-bars{
 		float: right;
-		margin-right: 20px;
-		margin-bottom: 10px;
+		margin-right: 40px;
+		margin-top: 15px;
 	}
 	.narrow-menu-inner{
 		display: block;
