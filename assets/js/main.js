@@ -32,6 +32,12 @@ $(document).ready(function(){
 			is_error = true;
 			error_count +=1;
 		}
+		
+		var terms = $("#form-terms").prop()
+		if ($("#form-terms").val() != "checked"){
+			$("#form-error-terms").css("display", "block");
+			alert(terms)
+		}
 
 		if (is_error == true) {
 			$("#form-error-count").text(error_count);
