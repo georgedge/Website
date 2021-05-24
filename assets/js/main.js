@@ -33,10 +33,12 @@ $(document).ready(function(){
 			error_count +=1;
 		}
 		
-		var terms = $("#form-terms").prop()
-		if ($("#form-terms").val() != "checked"){
+		var terms = $("#form-terms").is(":checked");
+		if (terms == false){
+			$("input#form-terms").css("outline", "1px solid #ff3333");
 			$("#form-error-terms").css("display", "block");
-			alert(terms)
+			is_error = true;
+			error_count +=1;
 		}
 
 		if (is_error == true) {
