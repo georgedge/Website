@@ -8,7 +8,6 @@ $(document).ready(function(){
 		
 		var fullname = $("#form-name").val();
 		if (fullname == ""){
-			//alert("You need to input a fullname")
 			$("input#form-name").css("border", "1px solid #ff3333");
 			is_error = true;
 			error_count +=1;
@@ -32,10 +31,10 @@ $(document).ready(function(){
 			is_error = true;
 			error_count +=1;
 		}
-		
 		var terms = $("#form-terms").is(":checked");
 		if (terms == false){
-			$("input#form-terms").css("outline", "1px solid #ff3333");
+			$(".form-terms").css("outline", "1px solid #ff3333");
+			$(".checkbox-text-terms").css("color", "#ff3333");
 			$("#form-error-terms").css("display", "block");
 			is_error = true;
 			error_count +=1;
